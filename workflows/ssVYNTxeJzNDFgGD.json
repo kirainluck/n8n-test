@@ -1,0 +1,54 @@
+{
+  "id": "ssVYNTxeJzNDFgGD",
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "14f722fd-16f1-4313-a6f7-d1572b43e82a",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "resource": "bucket",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.awsS3",
+      "typeVersion": 2,
+      "position": [
+        220,
+        0
+      ],
+      "id": "84c53321-469e-48a5-8823-5539c1badc77",
+      "name": "AWS S3"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "AWS S3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "9a3c2047-c876-4ea9-865e-886c3d87d283",
+  "owner": {
+    "type": "personal",
+    "personalEmail": "liverov@yandex.ru"
+  },
+  "parentFolderId": null
+}

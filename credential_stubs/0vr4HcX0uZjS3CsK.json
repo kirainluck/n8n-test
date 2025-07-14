@@ -1,0 +1,13 @@
+{
+  "id": "0vr4HcX0uZjS3CsK",
+  "name": "Airtable Personal Access Token account",
+  "type": "airtableTokenApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "fdHTObvhXlLQ1t4o",
+    "teamName": "Nikulochkin"
+  }
+}

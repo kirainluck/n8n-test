@@ -1,0 +1,41 @@
+{
+  "id": "Z5rf1Zqcq9Ig0Mnf",
+  "name": "My workflow 2",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "102a506d-a091-4adc-98c3-0d0aa6cb66d6",
+      "name": "Telegram Trigger",
+      "webhookId": "c61d1a35-e320-455b-b84e-2fa47ebcff61",
+      "credentials": {
+        "telegramApi": {
+          "id": "hooiZnTW7teJM1CF",
+          "name": "Telegram account 2"
+        }
+      }
+    }
+  ],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "2619b420-4e26-4e79-af1a-d3549411f735",
+  "owner": {
+    "type": "team",
+    "teamId": "fdHTObvhXlLQ1t4o",
+    "teamName": "Nikulochkin"
+  },
+  "parentFolderId": null
+}

@@ -1,0 +1,83 @@
+{
+  "id": "8VGHM3CUURBsjMDX",
+  "name": "get_jira_opened_tasks_tg",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "13cac376-f921-4ff1-bf53-c4cd2d3c1860",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -500,
+        -380
+      ],
+      "id": "67fce5a1-9ee0-4f9c-9742-8b76b8c53e63",
+      "name": "Webhook",
+      "webhookId": "13cac376-f921-4ff1-bf53-c4cd2d3c1860"
+    },
+    {
+      "parameters": {
+        "jiraVersion": "serverPat",
+        "operation": "getAll",
+        "limit": 10,
+        "options": {
+          "jql": "status IN (\"To Do\", \"In Progress\") AND created <= -7d"
+        }
+      },
+      "type": "n8n-nodes-base.jira",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        -380
+      ],
+      "id": "944237d8-5dd8-4178-9bd5-fe85685fc77c",
+      "name": "Jira Software",
+      "credentials": {
+        "jiraSoftwareServerPatApi": {
+          "id": "U0MOx1WBYzMzFl6L",
+          "name": "Jira SW Server (PAT) account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        60,
+        -360
+      ],
+      "id": "8c3d22d9-95b9-4806-9b7a-99d3f2f0c895",
+      "name": "HTTP Request"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Jira Software",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "1a5a2970-b90d-4d46-8b7f-4e1a7d53c130",
+  "owner": {
+    "type": "team",
+    "teamId": "qhyxGmwCBurv2j9Z",
+    "teamName": "Kirill_test"
+  },
+  "parentFolderId": null
+}

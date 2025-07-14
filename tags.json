@@ -1,0 +1,58 @@
+{
+  "tags": [
+    {
+      "id": "x5Bb2TID67pjw5dE",
+      "name": "Test1"
+    },
+    {
+      "id": "2AxmxoY6hxlLG6dF",
+      "name": "Test2"
+    },
+    {
+      "id": "W8I0ir0deD3Y9liD",
+      "name": "nik"
+    },
+    {
+      "id": "UViFOPixOwp8hzZR",
+      "name": "ananasoviy-ananas"
+    }
+  ],
+  "mappings": [
+    {
+      "workflowId": "MCXFFmc3G8HvOEte",
+      "tagId": "x5Bb2TID67pjw5dE"
+    },
+    {
+      "workflowId": "bql83nZJ5e1DMcYv",
+      "tagId": "UViFOPixOwp8hzZR"
+    },
+    {
+      "workflowId": "bql83nZJ5e1DMcYv",
+      "tagId": "W8I0ir0deD3Y9liD"
+    },
+    {
+      "workflowId": "ohdyPOQY7R1RsaQC",
+      "tagId": "x5Bb2TID67pjw5dE"
+    },
+    {
+      "workflowId": "BCX8I5rQVH73eFBA",
+      "tagId": "2AxmxoY6hxlLG6dF"
+    },
+    {
+      "workflowId": "dvHmvvKy19SZIUrw",
+      "tagId": "2AxmxoY6hxlLG6dF"
+    },
+    {
+      "workflowId": "dvHmvvKy19SZIUrw",
+      "tagId": "x5Bb2TID67pjw5dE"
+    },
+    {
+      "workflowId": "OuNZZDbXY1u17nOx",
+      "tagId": "2AxmxoY6hxlLG6dF"
+    },
+    {
+      "workflowId": "OuNZZDbXY1u17nOx",
+      "tagId": "x5Bb2TID67pjw5dE"
+    }
+  ]
+}

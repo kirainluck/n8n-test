@@ -1,0 +1,82 @@
+{
+  "id": "OuNZZDbXY1u17nOx",
+  "name": "remind_as_work_started_tg",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "triggerAtHour": 8,
+              "triggerAtMinute": 30
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -240,
+        -120
+      ],
+      "id": "b226e24e-41bf-4a80-b3f3-618ab44f799f",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "chatId": "358461272",
+        "text": "=Good morning sweetie, it's time to wake up and enjoy the new day",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -20,
+        -120
+      ],
+      "id": "1ad943ce-601c-427e-a50e-3ea58d453076",
+      "name": "Telegram",
+      "webhookId": "8b76add6-dced-4f89-b82f-114a83afc8cc",
+      "credentials": {
+        "telegramApi": {
+          "id": "wckJQSrQBmVKerId",
+          "name": "tg_acc"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Europe/Moscow",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "triggerCount": 1,
+  "versionId": "b942fa0d-e507-4b2a-bbc5-4c2f3698b296",
+  "owner": {
+    "type": "team",
+    "teamId": "qhyxGmwCBurv2j9Z",
+    "teamName": "Kirill_test"
+  },
+  "parentFolderId": null
+}

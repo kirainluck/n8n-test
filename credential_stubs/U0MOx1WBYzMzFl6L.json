@@ -1,0 +1,14 @@
+{
+  "id": "U0MOx1WBYzMzFl6L",
+  "name": "Jira SW Server (PAT) account",
+  "type": "jiraSoftwareServerPatApi",
+  "data": {
+    "personalAccessToken": "",
+    "domain": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "qhyxGmwCBurv2j9Z",
+    "teamName": "Kirill_test"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "wckJQSrQBmVKerId",
+  "name": "tg_acc",
+  "type": "telegramApi",
+  "data": {
+    "accessToken": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "qhyxGmwCBurv2j9Z",
+    "teamName": "Kirill_test"
+  }
+}

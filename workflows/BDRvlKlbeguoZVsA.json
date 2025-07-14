@@ -1,0 +1,87 @@
+{
+  "id": "BDRvlKlbeguoZVsA",
+  "name": "Web_api",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "db2f31eb-f5ed-4992-b912-7909cce2acbe",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -320,
+        20
+      ],
+      "id": "8f3d775a-e09b-455b-b677-de18ad64bb4e",
+      "name": "Webhook",
+      "webhookId": "db2f31eb-f5ed-4992-b912-7909cce2acbe"
+    },
+    {
+      "parameters": {
+        "language": "python",
+        "pythonCode": "# Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor item in _input.all():\n  item.json.name = 'test'\n  item.json.title = 'test data'\n  item.json.comment = 'some test data'\nreturn _input.all()"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -100,
+        20
+      ],
+      "id": "8fa5e386-32b2-4679-be21-99749b78ddf7",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "=Name is  {{ $json.name }}, title is {{ $json.title }} and comment is {{ $json.comment }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.2,
+      "position": [
+        120,
+        20
+      ],
+      "id": "6a59225a-7f66-4390-bcc4-c3e2813173e9",
+      "name": "Respond to Webhook",
+      "alwaysOutputData": false
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 1,
+  "versionId": "0dee3a60-26a5-4a59-986a-939ef9470fbb",
+  "owner": {
+    "type": "team",
+    "teamId": "qhyxGmwCBurv2j9Z",
+    "teamName": "Kirill_test"
+  },
+  "parentFolderId": null
+}

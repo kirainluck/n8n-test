@@ -1,0 +1,13 @@
+{
+  "id": "gF1C5Nzq6SCHWLtB",
+  "name": "tg_creds",
+  "type": "telegramApi",
+  "data": {
+    "accessToken": "",
+    "baseUrl": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "personalEmail": "kprokhorov@inno.tech"
+  }
+}

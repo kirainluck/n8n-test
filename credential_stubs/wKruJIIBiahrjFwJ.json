@@ -1,0 +1,14 @@
+{
+  "id": "wKruJIIBiahrjFwJ",
+  "name": "OpenAi account",
+  "type": "openAiApi",
+  "data": {
+    "apiKey": "",
+    "organizationId": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "fdHTObvhXlLQ1t4o",
+    "teamName": "Nikulochkin"
+  }
+}

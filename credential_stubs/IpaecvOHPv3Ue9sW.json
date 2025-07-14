@@ -1,0 +1,14 @@
+{
+  "id": "IpaecvOHPv3Ue9sW",
+  "name": "SSL Certificates account",
+  "type": "httpSslAuth",
+  "data": {
+    "ca": "",
+    "cert": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "qhyxGmwCBurv2j9Z",
+    "teamName": "Kirill_test"
+  }
+}
