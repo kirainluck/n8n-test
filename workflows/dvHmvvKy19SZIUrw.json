@@ -65,8 +65,8 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.1,
       "position": [
-        80,
-        -80
+        -20,
+        -380
       ],
       "id": "d9b96fa9-59c4-4886-a479-06e6cf19a823",
       "name": "Объединяем входные данные",
@@ -145,83 +145,50 @@
       "typeVersion": 1,
       "id": "d47d6261-e09c-4145-9882-4b88ea53896e",
       "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## Чат TG куда шлет бот \n\nhttps://t.me/+DqL75PrpI-hjOWI6"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        320,
+        -480
+      ],
+      "typeVersion": 1,
+      "id": "26e7b955-2572-48b8-82db-dd9e3afa63b2",
+      "name": "Sticky Note1"
     }
   ],
   "connections": {
     "When clicking ‘Test workflow’": {
       "main": [
-        [
-          {
-            "node": "Получаем шаблон манифеста",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Устанавливаем переменные",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Получаем шаблон манифеста": {
       "main": [
-        [
-          {
-            "node": "Объединяем входные данные",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Устанавливаем переменные": {
       "main": [
-        [
-          {
-            "node": "Объединяем входные данные",
-            "type": "main",
-            "index": 1
-          }
-        ]
+        []
       ]
     },
     "Объединяем входные данные": {
       "main": [
-        [
-          {
-            "node": "Подставляем переменные в шаблон",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Подставляем переменные в шаблон": {
       "main": [
-        [
-          {
-            "node": "Шаблон в telegram",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "кубконфиг",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "кубконфиг": {
       "main": [
-        [
-          {
-            "node": "Задеплоить в кубер",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     }
   },
@@ -229,7 +196,7 @@
     "executionOrder": "v1"
   },
   "triggerCount": 0,
-  "versionId": "6512ee7a-17ed-46f7-acf9-df3cda5b24bd",
+  "versionId": "873c6b5c-1545-4da0-9a92-4c9af40c7bae",
   "owner": {
     "type": "team",
     "teamId": "6iS5I7k7UsluxX9r",
