@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "id": "GwLtWcU7008CePu7",
+      "name": "Archive",
+      "parentFolderId": null,
+      "homeProjectId": "qhyxGmwCBurv2j9Z",
+      "createdAt": "2025-07-14T16:31:36.451Z",
+      "updatedAt": "2025-07-14T16:31:36.451Z"
+    },
+    {
+      "id": "zC9zLIkpQjOOWfCm",
+      "name": "Jira workflows",
+      "parentFolderId": "GwLtWcU7008CePu7",
+      "homeProjectId": "qhyxGmwCBurv2j9Z",
+      "createdAt": "2025-07-14T16:32:04.920Z",
+      "updatedAt": "2025-07-14T16:32:04.920Z"
+    }
+  ]
+}
