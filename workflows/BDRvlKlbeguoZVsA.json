@@ -47,6 +47,17 @@
       "id": "6a59225a-7f66-4390-bcc4-c3e2813173e9",
       "name": "Respond to Webhook",
       "alwaysOutputData": false
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        -160
+      ],
+      "id": "2395a649-92bc-4c81-be7d-6365c3905afa",
+      "name": "Sticky Note"
     }
   ],
   "connections": {
@@ -77,7 +88,7 @@
     "executionOrder": "v1"
   },
   "triggerCount": 1,
-  "versionId": "0dee3a60-26a5-4a59-986a-939ef9470fbb",
+  "versionId": "653efd3d-32af-4d32-8309-f28b0cd121ee",
   "owner": {
     "type": "team",
     "teamId": "qhyxGmwCBurv2j9Z",
